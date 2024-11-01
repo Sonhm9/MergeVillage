@@ -4,8 +4,8 @@ public class MoveObject : MonoBehaviour
 {
     public Vector3 startPosition; // 시작 위치
     public float speed = 10; // 속도
-    public float leftPositionLimit = -85; // 왼쪽 한계
-    public float rightPositionLimit = 80; // 오른쪽 한계
+    public float leftPositionLimit = -130; // 왼쪽 한계
+    public float rightPositionLimit = 30; // 오른쪽 한계
 
     void Start()
     {
