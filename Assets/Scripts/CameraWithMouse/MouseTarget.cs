@@ -73,7 +73,10 @@ public class MouseTarget : MonoBehaviour
 
         // 새 자식 오브젝트 생성
         GameObject building = Instantiate(prefab);
+
         building.transform.SetParent(displayBuilding.transform);
+
+        building.transform.localPosition = Vector3.zero;
         building.transform.localRotation = Quaternion.identity;
 
         // 콜라이더 해제
