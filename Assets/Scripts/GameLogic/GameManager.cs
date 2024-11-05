@@ -71,5 +71,6 @@ public class GameManager : MonoBehaviour
     {
         UIManager.Instance.GameOver();
         CameraController.Instance.isCameraPaused = true;
+        BuildingQueue.InitializeLevel();
     }
 }

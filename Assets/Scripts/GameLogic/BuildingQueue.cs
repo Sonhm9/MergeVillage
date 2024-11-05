@@ -61,4 +61,11 @@ public class BuildingQueue : MonoBehaviour
         }
     }
 
+    // ·¹º§ ¾÷
+    public static void InitializeLevel ()
+    {
+        currentMaxLevel = 0;
+        buildingQueue.Clear();
+    }
+
 }
