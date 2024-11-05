@@ -21,12 +21,13 @@ public class PlaceBuilding : MonoBehaviour
 
         building.transform.SetParent(parent.transform); // 위치오브젝트의 자식으로
         building.transform.localRotation = Quaternion.identity; // 회전을 로컬회전으로
+
+        mouseTarget.ChangeBuildingPrefab(buildingPrefab[BuildingQueue.Peek()]); // 큐에서 건물을 꺼내서 디스플레이 건물 교체
     }
 
     // 건설할 건물 세팅
     public void SetTargetBuilding(int index)
     {
         buildingIdx = index;
-        mouseTarget.ChangeBuildingPrefab(buildingPrefab[buildingIdx]); // 건설할 건물 교체
     }
 }

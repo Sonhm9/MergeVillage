@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16e2d8ba02809cb4f9b466890d84c9c3, type: 3}
   m_Name: Level08
   m_EditorClassIdentifier: 
-  level: 8
+  level: 7
   point: 640

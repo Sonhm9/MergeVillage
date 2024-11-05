@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class CameraController : MonoBehaviour
 {
@@ -19,7 +21,24 @@ public class CameraController : MonoBehaviour
     float zoomSpeed = 10;
 
     CursorController cursorController;
+    static CameraController instance;
 
+    public bool isCameraPaused = false;
+    public static CameraController Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new CameraController();
+            }
+            return instance;
+        }
+    }
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -30,6 +49,10 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        if (isCameraPaused == true)
+        {
+            return;
+        }
         // 카메라 이동
         if (Input.GetMouseButton(1))
         {

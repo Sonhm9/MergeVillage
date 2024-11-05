@@ -81,9 +81,13 @@ public class MouseTarget : MonoBehaviour
 
         // 콜라이더 해제
         Collider prefabCollider = building.GetComponent<BoxCollider>();
+        MergeBuilding merge = building.GetComponent<MergeBuilding>();
+        AudioSource audioSource = building.GetComponent<AudioSource>();
         if (prefabCollider != null)
         {
+            merge.DeactiveCollision();
             prefabCollider.enabled = false;
+            audioSource.enabled = false;
         }
     }
 }
