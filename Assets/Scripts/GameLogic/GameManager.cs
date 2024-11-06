@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         UIManager.Instance.GameStart();
+        point = 0;
+        UIManager.Instance.PointTextUpdate();
     }
 
     public void GameOver()
