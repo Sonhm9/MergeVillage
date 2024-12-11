@@ -6,4 +6,4 @@
 <div align=center> 🖱 휠: 줌 인/아웃
 
 
-#### [실행 파일.exe](https://drive.google.com/file/d/1VfbFV1SJ8K6AYJ4adhXkhUJMd_kImJeV/view?usp=sharing)
+#### [실행 파일.zip](https://drive.google.com/file/d/1VfbFV1SJ8K6AYJ4adhXkhUJMd_kImJeV/view?usp=sharing)
